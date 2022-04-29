@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const PopupImage = (props) => {
+const ImagePopup = (props) => {
 
     function handleOverlayClick(evt) {
         if (evt.target === evt.currentTarget) {
@@ -22,4 +22,4 @@ const PopupImage = (props) => {
     );
 };
 
-export default PopupImage;
+export default ImagePopup;

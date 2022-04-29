@@ -8,7 +8,7 @@ import PopupEditAvatar from "./PopupEditAvatar";
 import PopupConfirm from "./PopupConfirm";
 
 import {Api} from '../utils/api.js'
-import PopupImage from "./PopupImage";
+import ImagePopup from "./ImagePopup";
 
 
 function App() {
@@ -141,7 +141,7 @@ function App() {
 
                 <PopupConfirm
                 />
-                <PopupImage
+                <ImagePopup
                     isOpen={isImagePopupOpen}
                     onClose={closeAllPopups}
                     card={selectedCard}
