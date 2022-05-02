@@ -6,7 +6,6 @@ function PopupWithForm(props) {
         if (evt.target === evt.currentTarget) {
             props.onClose()
         }
-        ;
     }
 
     return (
@@ -18,7 +17,8 @@ function PopupWithForm(props) {
                         onClick={props.onClose}/>
                 <form className="popup__form" name="edit" id={props.name}>
                     {props.children}
-                    <button type="submit" className="popup__save-button" onSubmit={props.onSubmit}>{props.button}</button>
+                    <button type="submit" className="popup__save-button"
+                            onSubmit={props.onSubmit}>{props.button}</button>
                 </form>
             </div>
         </div>

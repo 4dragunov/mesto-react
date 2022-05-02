@@ -5,8 +5,6 @@ const Card = (props) => {
 
     const isLiked = props.card.likes.some(like => like._id === props.currentUser._id)
 
-
-
     function handleDeleteCard() {
         props.onDelete(props.card._id)
     }
@@ -16,14 +14,11 @@ const Card = (props) => {
     }
 
     function handleLikeCard() {
-        console.log('лайк')
-
         props.onLikeCard(props.card);
     }
 
 
     function handleDisLikeCard() {
-        console.log('дизлайк')
         props.onDisLikeCard(props.card);
     }
 

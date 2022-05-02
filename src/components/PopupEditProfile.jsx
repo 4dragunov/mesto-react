@@ -2,7 +2,6 @@ import React from 'react';
 import PopupWithForm from './PopupWithForm'
 
 const PopupEditProfile = (props) => {
-
     const [name, setName] = React.useState('');
     const [about, setAbout] = React.useState('')
 
@@ -19,7 +18,6 @@ const PopupEditProfile = (props) => {
     const handleOnSubmit = (evt) => {
         evt.preventDefault();
         props.onSubmit(name, about)
-        console.log(name, about)
     }
 
 
