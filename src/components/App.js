@@ -51,57 +51,59 @@ function App() {
 
 
     return (
-        <div className="App page">
-            <div className="root ">
-                <Header/>
-                <Main
-                    EditProfile={handleEditProfileClick}
-                    NewPost={handleAddPlaceClick}
-                    AvatarEdit={handleEditAvatarClick}
-                    onDelete={handleCardDelete}
-                    onCardClick={handleOnCardClick}
-                />
+        <div className="page-container">
+            <div className="page">
+                <div className="root">
+                    <Header/>
+                    <Main
+                        EditProfile={handleEditProfileClick}
+                        NewPost={handleAddPlaceClick}
+                        AvatarEdit={handleEditAvatarClick}
+                        onDelete={handleCardDelete}
+                        onCardClick={handleOnCardClick}
+                    />
 
-                <PopupEditProfile
-                    CurrentUser=''
-                    isOpen={isPopupEditProfileOpen}
-                    name='-profile-edit'
-                    onClose={closeAllPopups}
-                    header='Редактировать профиль'
-                    onSubmit={handleEditProfileClick}
-                    button='Сохранить'
-                />
-                <PopupAddPlace
-                    isOpen={isPopupAddPlaceOpen}
-                    name='-new-post'
-                    onClose={closeAllPopups}
-                    header='Новое место'
-                    button='Создать'
-                />
-                <PopupEditAvatar
-                    isOpen={isPopupAvatarOpen}
-                    name='-avatar-edit'
-                    onClose={closeAllPopups}
-                    header='Обновить аватар'
-                    button='Сохранить'
-                />
+                    <PopupEditProfile
+                        CurrentUser=''
+                        isOpen={isPopupEditProfileOpen}
+                        name='-profile-edit'
+                        onClose={closeAllPopups}
+                        header='Редактировать профиль'
+                        onSubmit={handleEditProfileClick}
+                        button='Сохранить'
+                    />
+                    <PopupAddPlace
+                        isOpen={isPopupAddPlaceOpen}
+                        name='-new-post'
+                        onClose={closeAllPopups}
+                        header='Новое место'
+                        button='Создать'
+                    />
+                    <PopupEditAvatar
+                        isOpen={isPopupAvatarOpen}
+                        name='-avatar-edit'
+                        onClose={closeAllPopups}
+                        header='Обновить аватар'
+                        button='Сохранить'
+                    />
 
-                <PopupConfirm
-                />
-                <ImagePopup
-                    isOpen={isImagePopupOpen}
-                    onClose={closeAllPopups}
-                    card={selectedCard}
-                />
-                <PopupConfirm
-                    isOpen={isPopupConfirmOpen}
-                    onClose={closeAllPopups}
-                    name='-confirm'
-                    header='Вы уверены?'
-                    onSubmit={handleCardDelete}
-                    button='Да'
-                />
-                <Footer/>
+                    <PopupConfirm
+                    />
+                    <ImagePopup
+                        isOpen={isImagePopupOpen}
+                        onClose={closeAllPopups}
+                        card={selectedCard}
+                    />
+                    <PopupConfirm
+                        isOpen={isPopupConfirmOpen}
+                        onClose={closeAllPopups}
+                        name='-confirm'
+                        header='Вы уверены?'
+                        onSubmit={handleCardDelete}
+                        button='Да'
+                    />
+                    <Footer/>
+                </div>
             </div>
         </div>
     );
