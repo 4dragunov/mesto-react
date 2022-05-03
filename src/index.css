@@ -65,6 +65,8 @@
 @import url(./blocks/popup/__close-button/_type/popup__close-button_type-image.css);
 @import url(./blocks/popup/__close-button/_type/popup__close-button_type-new-post.css);
 @import url(./blocks/popup/__close-button/_type/popup__close-button_type-profile-edit.css);
+@import url(./blocks/popup/__close-button/_type/popup__close-button_type-avatar-edit.css);
+
 
 
 @import url(./blocks/popup/_type/popup_type-image.css);
