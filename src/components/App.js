@@ -14,7 +14,7 @@ function App() {
     const [isPopupAvatarOpen, setIsPopupAvatarOpen] = React.useState(false)
     const [isPopupConfirmOpen, setIsPopupConfirmOpen] = React.useState(false)
     const [isImagePopupOpen, setIsImagePopupOpen] = React.useState(false)
-    const [selectedCard, setSelectedCard] = React.useState([])
+    const [selectedCard, setSelectedCard] = React.useState({})
 
     function handleEditProfileClick() {
         setIsPopupEditProfileOpen(true)
@@ -40,7 +40,7 @@ function App() {
         setIsPopupAvatarOpen(false)
         setIsPopupConfirmOpen(false)
         setIsImagePopupOpen(false)
-        setSelectedCard([])
+        setSelectedCard({})
     }
 
 

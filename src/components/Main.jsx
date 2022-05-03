@@ -7,6 +7,7 @@ function Main(props) {
     const [cards, setCards] = React.useState([]);
     const [userInfo, setCurrentUser] = React.useState({name: '', avatar: '', about: ''});
 
+
     React.useEffect(() => {
             Promise.all([Api.getInitialCards(), Api.getUserInfo()])
                 .then(([initialCards, userData]) => {
